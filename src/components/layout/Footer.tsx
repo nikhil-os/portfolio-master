@@ -30,14 +30,14 @@ export function Footer() {
         <div className="flex justify-center space-x-4 mb-4">
           {/* GitHub */}
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://github.com/suryansh-it" target="_blank" aria-label="GitHub" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
+            <Link href="https://github.com/nikhil-os" target="_blank" aria-label="GitHub" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
               <Github className="h-5 w-5" />
             </Link>
           </Button>
 
           {/* LinkedIn */}
           <Button variant="ghost" size="icon" asChild>
-            <Link href="https://www.linkedin.com/in/suryansharma/" target="_blank" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
+            <Link href="https://www.linkedin.com/in/nikhilsahupr/" target="_blank" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
               <Linkedin className="h-5 w-5" />
             </Link>
           </Button>
@@ -45,7 +45,7 @@ export function Footer() {
           
   {/* LeetCode (standalone link + img) */}
   <Link
-        href="https://leetcode.com/suryansharma09/"
+        href="https://leetcode.com/u/nikhilsahu-pr/"
         target="_blank"
         aria-label="LeetCode"
         className="group inline-flex items-center justify-center p-2 text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200 rounded"
@@ -63,7 +63,7 @@ export function Footer() {
           {/* Email */}
           <Button variant="ghost" size="icon" asChild>
             {/* Make sure to replace with your actual email */}
-            <Link href="mailto:suryansharma.engg@gmail.com" aria-label="Email" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
+            <Link href="mailto:nikhilsahu.pr@gmail.com" aria-label="Email" className="text-muted-foreground hover:text-primary transform hover:scale-125 transition-all duration-200">
               <Mail className="h-5 w-5" />
             </Link>
           </Button>
