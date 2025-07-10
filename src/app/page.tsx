@@ -12,7 +12,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
-      <ExperienceSection />
+      {/* <ExperienceSection /> */}
       <ProjectsSection />
       {/* <BlogSection /> */}
       <ContactSection />

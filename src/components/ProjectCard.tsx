@@ -25,23 +25,24 @@ export function ProjectCard({ project }: ProjectCardProps) {
       whileHover={{
         scale: 1.03,
         y: -8,
-        boxShadow: "0 0 25px hsl(var(--primary))" // Neon glow effect using primary color
+        boxShadow: "0 0 25px hsl(var(--primary))"
       }}
-      className="group relative overflow-hidden rounded-xl shadow-2xl" // Tailwind's transform/hover:scale removed, Framer Motion handles it
+      className="group relative overflow-hidden rounded-xl shadow-2xl w-[30%] h-[60%"
     >
       <Card className="h-full flex flex-col border-2 border-transparent group-hover:border-primary transition-colors duration-300 bg-card/70 backdrop-blur-sm">
+        
+        {/* ✅ Fixed Image Block */}
         <div className="relative w-full aspect-video">
           <Image
             src={project.image}
             alt={project.title}
-            layout="fill"
-            objectFit="cover"
-            className="transition-transform duration-500 group-hover:scale-110"
+            fill
+            className="object-cover transition-transform duration-500 group-hover:scale-110 rounded-t-xl"
             data-ai-hint={project.dataAiHint}
           />
           <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
         </div>
-        
+
         <CardHeader className="p-4 sm:p-6">
           <CardTitle className="text-xl sm:text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
             {project.title}
@@ -50,7 +51,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             {project.description}
           </CardDescription>
         </CardHeader>
-        
+
         <CardContent className="p-4 sm:p-6 flex-grow">
           <div className="flex flex-wrap gap-2 mb-4">
             {project.tags.map((tag) => (
@@ -60,7 +61,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             ))}
           </div>
         </CardContent>
-        
+
         <CardFooter className="p-4 sm:p-6 flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
           <div className="flex space-x-2">
             {project.liveLink && (

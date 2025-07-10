@@ -69,7 +69,8 @@ export function ProjectsSection() {
 
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 justify-center"
+          className="flex flex-wrap justify-center "
+          style={{ gap: '10rem' }}
         >
           <AnimatePresence>
             {filteredProjects.map(project => (
